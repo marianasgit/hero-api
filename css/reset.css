@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  background-image: url(../img/backgroundImage.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+header {
+  width: fit-content;
+  height: fit-content;
+  font-family: "Bangers", cursive;
+  font-size: 25px;
+}

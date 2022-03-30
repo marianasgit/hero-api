@@ -8,7 +8,7 @@ const pesquisarHeroi = async (heroi) => {
   return data;
 };
 
-const criarCard = ({ image, biography, powerstats }) => {
+const criarPersonagens = ({ image, biography, powerstats }) => {
 
 //  console.log(work.base);
 console.log(powerstats)
@@ -22,16 +22,16 @@ console.log(powerstats)
   const power = document.createElement("power");
   power.src = powerstats; 
 
-  return img , bio, power;
+  return img //, bio, power;
 };
 
-const carregarImagens = async () => {
+const carregarPersonagens = async () => {
   const container = document.getElementById("imagem-container");
   const heroi = document.getElementById("heroi").value;
-  const imagens = await pesquisarHeroi(heroi);
-  console.log(imagens);
-  const tagImagens = imagens.results.map(criarCard);
-  container.replaceChildren(...tagImagens);
+  const personagens = await pesquisarHeroi(heroi);
+  console.log(personagens);
+  const tagPersonagens = personagens.results.map(criarPersonagens);
+  container.replaceChildren(...tagPersonagens);
 };
 
-document.getElementById("pesquisar").addEventListener("click", carregarImagens);
+document.getElementById("pesquisar").addEventListener("click", carregarPersonagens);

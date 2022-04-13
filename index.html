@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="main.js" defer></script>
@@ -29,21 +30,21 @@
           id="heroi"
         />
         <button id="pesquisar">GO</button>
-        <datalist id="heros-list"></datalist>
       </div>
-      <div id="imagem-container"></div>
-
-      <!-- <div class="card-personagem">
-        <div class="biografia">
-          <h4>Biography</h4>
-          <ul class="lista-biografia">
-            <li>
-              <h5>Full Name: </h5>
-              <span id="nome"></span>
-            </li>
-          </ul> -->
+      <div  class="swiper mySwiper container-slider ">
+        <div class="swiper-wrapper content ">
+          <div id="imagem-container" class=" swiper-slide ">
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </main>
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     
   </body>
 </html>
